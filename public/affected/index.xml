@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <link rel="alternate" type="text/html" href="http://localhost:1313/"/>
-    <title>Affected on Eggsample Status</title>
+    <title>Affected on Donkey Mobile Status</title>
     <link>http://localhost:1313/affected/</link>
-    <description>Incident history</description>
+    <description>Incident geschiedenis</description>
     <generator>github.com/cstate</generator>
-    <language>en</language>
+    <language>nl</language>
     
     <lastBuildDate>2019-10-05T16:24:00+00:00</lastBuildDate>
     <updated>2019-10-05T16:24:00+00:00</updated>

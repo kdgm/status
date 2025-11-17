@@ -1,31 +1,26 @@
 {
   "is": "index",
-  "cStateVersion": "6.0",
+  "cStateVersion": "6.0.1",
   "apiVersion": "2.0",
-  "title": "Eggsample Status",
-  "languageCodeHTML": "en",
-  "languageCode": "en",
+  "title": "Donkey Mobile Status",
+  "languageCodeHTML": "nl",
+  "languageCode": "nl",
   "baseURL": "http://localhost:1313/",
   "description": "We continuously monitor the status of our services and if there are any interruptions, a note will be posted here.",
   "summaryStatus": "ok",
   "categories": [
       {
-        "name": "North Coast",
-        "description": "The main servers are located here.",
+        "name": "Kerkdienst Gemist",
+        "description": "Kerkdienstgemist services",
         "hideTitle": false,
         "closedByDefault": true
       }
     ,
       {
-        "name": "Empty Category",
+        "name": "Donkey Mobile",
+        "description": "Donkey Mobile services",
         "hideTitle": false,
-        "closedByDefault": false
-      }
-    ,
-      {
-        "name": "Uncategorized",
-        "hideTitle": true,
-        "closedByDefault": false
+        "closedByDefault": true
       }
     
   ],
@@ -34,9 +29,9 @@
   "pinnedIssues": [
       {
         "is": "issue",
-        "title": "Maintenance Announcement",
-        "createdAt": "2024-02-24 10:35:00 +0000 UTC",
-        "lastMod": "2021-10-10 17:02:38 +0300 EEST",
+        "title": "Onderhoud gepland",
+        "createdAt": "2025-02-24 10:35:00 +0000 UTC",
+        "lastMod": "2025-11-15 15:53:15 +0100 CET",
         "permalink": "http://localhost:1313/issues/2024-02-24-maintenance-window/",
         "affected": [],
         "filename": "2024-02-24-maintenance-window.md"
@@ -46,7 +41,7 @@
     
       {
         "name": "Gateway",
-        "category": "North Coast",
+        "category": "Kerkdienst Gemist",
         
         "status": "ok",
         
@@ -95,9 +90,9 @@
   ],
   
 
-  "buildDate": "2025-07-30",
-  "buildTime": "17:47",
-  "buildTimezone": "EEST",
+  "buildDate": "2025-11-16",
+  "buildTime": "18:42",
+  "buildTimezone": "CET",
   "colorBrand": "#0a0c0f",
   "colorOk": "#008000",
   "colorDisrupted": "#cc4400",

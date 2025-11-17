@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="nl" class="no-js">
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     
     <meta charset="utf-8">
@@ -20,10 +20,10 @@ the other one
 
 Note that &mdash; not considering the asterisk &mdash; the actual text
 content starts at 4-columns in.">
-    <title>Example Page | Eggsample Status</title>
+    <title>Example Page | Donkey Mobile Status</title>
     <link rel="canonical" href="http://localhost:1313/pages/example-page/">
-    <link rel="alternate" type="application/json" href="http://localhost:1313/pages/example-page/index.json" title="Eggsample Status" />
-    <meta name="generator" content="cState v6.0 - https://github.com/cstate/cstate">
+    <link rel="alternate" type="application/json" href="http://localhost:1313/pages/example-page/index.json" title="Donkey Mobile Status" />
+    <meta name="generator" content="cState v6.0.1 - https://github.com/cstate/cstate">
     <meta name="theme-color" content="#0a0c0f">
     <script>
     var themeBrandColor = '#0a0c0f';
@@ -441,6 +441,7 @@ content starts at 4-columns in.">
 
         .date { color: #c3bfb6; }
 
+	.tag { color: #fff; }
         .tag, .archive__head { background-color: #1d1f20; }
         .tag:hover { background: #222; }
         .issue:hover,
@@ -473,7 +474,7 @@ content starts at 4-columns in.">
 
   <body class="default single">
     <div class="contain">
-      <a href="http://localhost:1313/">← Go back to <em>Eggsample Status</em></a>
+      <a href="http://localhost:1313/">← Ga terug naar <em>Donkey Mobile Status</em></a>
       
       <div class="padding"></div>
 
@@ -639,7 +640,7 @@ which you wish to be displayed literally, ex.: `foo`, *bar*, etc.</p>
   
 
 
-  console.log('cState v6.0 - https://github.com/cstate/cstate');
+  console.log('cState v6.0.1 - https://github.com/cstate/cstate');
   document.getElementsByTagName('html')[0].className = 'js';
 
   
@@ -694,11 +695,11 @@ which you wish to be displayed literally, ex.: `foo`, *bar*, etc.</p>
     var interval = Math.floor(seconds / 31536000);
 
     if (interval > 1) {
-      return interval + ' years';
+      return interval + ' jaren';
     }
     interval = Math.floor(seconds / 2592000);
     if (interval > 1) {
-      return interval + ' months';
+      return interval + ' maanden';
     }
     interval = Math.floor(seconds / 86400);
     if (interval > 1) {
@@ -706,7 +707,7 @@ which you wish to be displayed literally, ex.: `foo`, *bar*, etc.</p>
     }
     interval = Math.floor(seconds / 3600);
     if (interval > 1) {
-      return interval + 'h';
+      return interval + 'u';
     }
     interval = Math.floor(seconds / 60);
     if (interval > 1) {
@@ -738,11 +739,11 @@ which you wish to be displayed literally, ex.: `foo`, *bar*, etc.</p>
       if (!time) {
         time = element.innerText;
         element.setAttribute('title', time || new Date);
-        html += 'just now';
+        html += 'net';
       } else if (timeSince(time) < 0) {
         html = element.innerText;
       } else {
-        html += timeSince(time) + ' ago';
+        html += timeSince(time) + ' geleden';
       }
       html += element.getAttribute('data-time-suffix') || '';
       element.innerHTML = html.trim();
@@ -762,8 +763,8 @@ which you wish to be displayed literally, ex.: `foo`, *bar*, etc.</p>
 
 <div class="footer">
   <div class="contain">
-    <p><strong class="bold">&copy; Eggsample Status, 2025</strong>
-       &nbsp; • &nbsp; <a href="#">Back to top</a>
+    <p><strong class="bold">&copy; Donkey Mobile Status, 2025</strong>
+       &nbsp; • &nbsp; <a href="#">terug naar top</a>
     </p>
 
     <p>We continuously monitor the status of our services and if there are any interruptions, a note will be posted here.</p>
@@ -777,9 +778,9 @@ which you wish to be displayed literally, ex.: `foo`, *bar*, etc.</p>
       <p class="hinted">
         <small>
           ⚡
-          Subscribe via RSS —
+          Abonneer via RSS —
           
-            <a href="http://localhost:1313/index.xml" class="no-underline">to all updates</a>
+            <a href="http://localhost:1313/index.xml" class="no-underline">op alle updates</a>
           
           
           

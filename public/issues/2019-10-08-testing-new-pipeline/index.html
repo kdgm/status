@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="nl" class="no-js">
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     
     <meta charset="utf-8">
@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <meta name="description" content="There may be disruptions in the rollout.">
-    <title>New Pipeline Rollout | Eggsample Status</title>
+    <title>New Pipeline Rollout | Donkey Mobile Status</title>
     <link rel="canonical" href="http://localhost:1313/issues/2019-10-08-testing-new-pipeline/">
-    <link rel="alternate" type="application/json" href="http://localhost:1313/issues/2019-10-08-testing-new-pipeline/index.json" title="Eggsample Status" />
-    <meta name="generator" content="cState v6.0 - https://github.com/cstate/cstate">
+    <link rel="alternate" type="application/json" href="http://localhost:1313/issues/2019-10-08-testing-new-pipeline/index.json" title="Donkey Mobile Status" />
+    <meta name="generator" content="cState v6.0.1 - https://github.com/cstate/cstate">
     <meta name="theme-color" content="#0a0c0f">
     <script>
     var themeBrandColor = '#0a0c0f';
@@ -428,6 +428,7 @@
 
         .date { color: #c3bfb6; }
 
+	.tag { color: #fff; }
         .tag, .archive__head { background-color: #1d1f20; }
         .tag:hover { background: #222; }
         .issue:hover,
@@ -468,7 +469,7 @@
 
   <body class="issues single">
     <div class="contain">
-      <a href="http://localhost:1313/">← Go back to <em>Eggsample Status</em></a>
+      <a href="http://localhost:1313/">← Ga terug naar <em>Donkey Mobile Status</em></a>
     </div>
 
     <div class="contain">
@@ -486,7 +487,7 @@
 
 	<small class="date">
 		
-		October 5, 2019 at 4:24 PM UTC
+		5 Januari 2019 4:24 PM UTC
 		
 	</small>
 
@@ -511,7 +512,7 @@
 		class="ok">
 		
 		<strong>
-			Resolved after
+			Opgelost na
 			
 			
 			34m
@@ -519,7 +520,7 @@
 		</strong>
 		<span class="tooltip__text">
 			
-			October 5, 2019 at 4:58 PM UTC
+			5 Januari 2019 4:58 PM UTC
 			
 		</span>
 		
@@ -541,10 +542,10 @@
 
     
     <div class="contain center">
-      <small>Last updated:
+      <small>Laatst gecontroleerd:
 
       
-        April 17, 2021 at 2:19 PM UTC
+        15 Januari 2025 3:53 PM UTC
       
 	  </small>
 	  <div class="padding"></div>
@@ -558,7 +559,7 @@
   
 
 
-  console.log('cState v6.0 - https://github.com/cstate/cstate');
+  console.log('cState v6.0.1 - https://github.com/cstate/cstate');
   document.getElementsByTagName('html')[0].className = 'js';
 
   
@@ -613,11 +614,11 @@
     var interval = Math.floor(seconds / 31536000);
 
     if (interval > 1) {
-      return interval + ' years';
+      return interval + ' jaren';
     }
     interval = Math.floor(seconds / 2592000);
     if (interval > 1) {
-      return interval + ' months';
+      return interval + ' maanden';
     }
     interval = Math.floor(seconds / 86400);
     if (interval > 1) {
@@ -625,7 +626,7 @@
     }
     interval = Math.floor(seconds / 3600);
     if (interval > 1) {
-      return interval + 'h';
+      return interval + 'u';
     }
     interval = Math.floor(seconds / 60);
     if (interval > 1) {
@@ -657,11 +658,11 @@
       if (!time) {
         time = element.innerText;
         element.setAttribute('title', time || new Date);
-        html += 'just now';
+        html += 'net';
       } else if (timeSince(time) < 0) {
         html = element.innerText;
       } else {
-        html += timeSince(time) + ' ago';
+        html += timeSince(time) + ' geleden';
       }
       html += element.getAttribute('data-time-suffix') || '';
       element.innerHTML = html.trim();
@@ -681,8 +682,8 @@
 
 <div class="footer">
   <div class="contain">
-    <p><strong class="bold">&copy; Eggsample Status, 2025</strong>
-       &nbsp; • &nbsp; <a href="#">Back to top</a>
+    <p><strong class="bold">&copy; Donkey Mobile Status, 2025</strong>
+       &nbsp; • &nbsp; <a href="#">terug naar top</a>
     </p>
 
     <p>We continuously monitor the status of our services and if there are any interruptions, a note will be posted here.</p>
@@ -696,9 +697,9 @@
       <p class="hinted">
         <small>
           ⚡
-          Subscribe via RSS —
+          Abonneer via RSS —
           
-            <a href="http://localhost:1313/index.xml" class="no-underline">to all updates</a>
+            <a href="http://localhost:1313/index.xml" class="no-underline">op alle updates</a>
           
           
           

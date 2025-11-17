@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="nl" class="no-js">
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     
     <meta charset="utf-8">
@@ -8,10 +8,10 @@
     
     <meta name="description" content="Post-mortem
 At approximately 14:01, a Redis instance acting as the primary for a highly-available cluster used by our API services was migrated automatically by Google’s Cloud Platform. This migration caused the node to incorrectly drop offline, forcing the cluster to rebalance and trigger known issues with the way our API instances handle Redis failover. After resolving this partial outage, unnoticed issues on other services caused a cascading failure through Example Chat App’s real time system. These issues caused enough critical impact that Example Chat App’s engineering team was forced to fully restart the service, reconnecting millions of clients over a period of 20 minutes.">
-    <title>Unavailable Guilds &amp; Connection Issues | Eggsample Status</title>
+    <title>Unavailable Guilds &amp; Connection Issues | Donkey Mobile Status</title>
     <link rel="canonical" href="http://localhost:1313/issues/2018-04-13-unavailable-guilds-connection-issues/">
-    <link rel="alternate" type="application/json" href="http://localhost:1313/issues/2018-04-13-unavailable-guilds-connection-issues/index.json" title="Eggsample Status" />
-    <meta name="generator" content="cState v6.0 - https://github.com/cstate/cstate">
+    <link rel="alternate" type="application/json" href="http://localhost:1313/issues/2018-04-13-unavailable-guilds-connection-issues/index.json" title="Donkey Mobile Status" />
+    <meta name="generator" content="cState v6.0.1 - https://github.com/cstate/cstate">
     <meta name="theme-color" content="#0a0c0f">
     <script>
     var themeBrandColor = '#0a0c0f';
@@ -429,6 +429,7 @@ At approximately 14:01, a Redis instance acting as the primary for a highly-avai
 
         .date { color: #c3bfb6; }
 
+	.tag { color: #fff; }
         .tag, .archive__head { background-color: #1d1f20; }
         .tag:hover { background: #222; }
         .issue:hover,
@@ -469,7 +470,7 @@ At approximately 14:01, a Redis instance acting as the primary for a highly-avai
 
   <body class="issues single">
     <div class="contain">
-      <a href="http://localhost:1313/">← Go back to <em>Eggsample Status</em></a>
+      <a href="http://localhost:1313/">← Ga terug naar <em>Donkey Mobile Status</em></a>
     </div>
 
     <div class="contain">
@@ -487,7 +488,7 @@ At approximately 14:01, a Redis instance acting as the primary for a highly-avai
 
 	<small class="date">
 		
-		April 13, 2018 at 3:54 PM UTC
+		13 Januari 2018 3:54 PM UTC
 		
 	</small>
 
@@ -514,17 +515,17 @@ At approximately 14:01, a Redis instance acting as the primary for a highly-avai
 		class="warning">
 		
 		<strong>
-			Resolved after
+			Opgelost na
 			
 			1h 
 			36m
 			
-			of downtime
+			offline te zijn
 			
 		</strong>
 		<span class="tooltip__text">
 			
-			April 13, 2018 at 5:30 PM UTC
+			13 Januari 2018 5:30 PM UTC
 			
 		</span>
 		
@@ -536,15 +537,15 @@ At approximately 14:01, a Redis instance acting as the primary for a highly-avai
 <p>At approximately 14:01, a Redis instance acting as the primary for a highly-available cluster used by our API services was migrated automatically by Google’s Cloud Platform. This migration caused the node to incorrectly drop offline, forcing the cluster to rebalance and trigger known issues with the way our API instances handle Redis failover. After resolving this partial outage, unnoticed issues on other services caused a cascading failure through Example Chat App’s real time system. These issues caused enough critical impact that Example Chat App’s engineering team was forced to fully restart the service, reconnecting millions of clients over a period of 20 minutes.</p>
 <hr>
 <p><em>Update</em> - A fix has been implemented and we are monitoring the results. Looks like this has been fixed. 
-  <span class="faded">(17:30 UTC — Apr 13)</span>
+  <span class="faded">(17:30 UTC — apr. 13)</span>
 
 </p>
 <p><em>Monitoring</em> - After hitting the ole reboot button Example Chat App is now recovering. We&rsquo;re going to continue to monitor as everyone reconnects. 
-  <span class="faded">(16:50 UTC — Apr 13)</span>
+  <span class="faded">(16:50 UTC — apr. 13)</span>
 
 </p>
 <p><em>Investigating</em> - We&rsquo;re aware of users experiencing unavailable guilds and issues when attempting to connect. We&rsquo;re currently investigating. 
-  <span class="faded">(15:54 UTC — Apr 13)</span>
+  <span class="faded">(15:54 UTC — apr. 13)</span>
 
 </p>
 </div>
@@ -560,10 +561,10 @@ At approximately 14:01, a Redis instance acting as the primary for a highly-avai
 
     
     <div class="contain center">
-      <small>Last updated:
+      <small>Laatst gecontroleerd:
 
       
-        February 29, 2020 at 7:16 PM UTC
+        15 Januari 2025 3:53 PM UTC
       
 	  </small>
 	  <div class="padding"></div>
@@ -577,7 +578,7 @@ At approximately 14:01, a Redis instance acting as the primary for a highly-avai
   
 
 
-  console.log('cState v6.0 - https://github.com/cstate/cstate');
+  console.log('cState v6.0.1 - https://github.com/cstate/cstate');
   document.getElementsByTagName('html')[0].className = 'js';
 
   
@@ -632,11 +633,11 @@ At approximately 14:01, a Redis instance acting as the primary for a highly-avai
     var interval = Math.floor(seconds / 31536000);
 
     if (interval > 1) {
-      return interval + ' years';
+      return interval + ' jaren';
     }
     interval = Math.floor(seconds / 2592000);
     if (interval > 1) {
-      return interval + ' months';
+      return interval + ' maanden';
     }
     interval = Math.floor(seconds / 86400);
     if (interval > 1) {
@@ -644,7 +645,7 @@ At approximately 14:01, a Redis instance acting as the primary for a highly-avai
     }
     interval = Math.floor(seconds / 3600);
     if (interval > 1) {
-      return interval + 'h';
+      return interval + 'u';
     }
     interval = Math.floor(seconds / 60);
     if (interval > 1) {
@@ -676,11 +677,11 @@ At approximately 14:01, a Redis instance acting as the primary for a highly-avai
       if (!time) {
         time = element.innerText;
         element.setAttribute('title', time || new Date);
-        html += 'just now';
+        html += 'net';
       } else if (timeSince(time) < 0) {
         html = element.innerText;
       } else {
-        html += timeSince(time) + ' ago';
+        html += timeSince(time) + ' geleden';
       }
       html += element.getAttribute('data-time-suffix') || '';
       element.innerHTML = html.trim();
@@ -700,8 +701,8 @@ At approximately 14:01, a Redis instance acting as the primary for a highly-avai
 
 <div class="footer">
   <div class="contain">
-    <p><strong class="bold">&copy; Eggsample Status, 2025</strong>
-       &nbsp; • &nbsp; <a href="#">Back to top</a>
+    <p><strong class="bold">&copy; Donkey Mobile Status, 2025</strong>
+       &nbsp; • &nbsp; <a href="#">terug naar top</a>
     </p>
 
     <p>We continuously monitor the status of our services and if there are any interruptions, a note will be posted here.</p>
@@ -715,9 +716,9 @@ At approximately 14:01, a Redis instance acting as the primary for a highly-avai
       <p class="hinted">
         <small>
           ⚡
-          Subscribe via RSS —
+          Abonneer via RSS —
           
-            <a href="http://localhost:1313/index.xml" class="no-underline">to all updates</a>
+            <a href="http://localhost:1313/index.xml" class="no-underline">op alle updates</a>
           
           
           

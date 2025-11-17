@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="nl" class="no-js">
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     
     <meta charset="utf-8">
@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <meta name="description" content="We continuously monitor the status of our services and if there are any interruptions, a note will be posted here.">
-    <title>Eggsample Status</title>
+    <title>Donkey Mobile Status</title>
     <link rel="canonical" href="http://localhost:1313/">
-    <link rel="alternate" type="application/json" href="http://localhost:1313/index.json" title="Eggsample Status" />
-    <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml" title="Eggsample Status" />
-    <link rel="alternate" type="image/svg+xml" href="http://localhost:1313/index.svg" title="Eggsample Status" />
-    <meta name="generator" content="cState v6.0 - https://github.com/cstate/cstate">
+    <link rel="alternate" type="application/json" href="http://localhost:1313/index.json" title="Donkey Mobile Status" />
+    <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml" title="Donkey Mobile Status" />
+    <link rel="alternate" type="image/svg+xml" href="http://localhost:1313/index.svg" title="Donkey Mobile Status" />
+    <meta name="generator" content="cState v6.0.1 - https://github.com/cstate/cstate">
     <meta name="theme-color" content="#0a0c0f">
     <script>
     var themeBrandColor = '#0a0c0f';
@@ -430,6 +430,7 @@
 
         .date { color: #c3bfb6; }
 
+	.tag { color: #fff; }
         .tag, .archive__head { background-color: #1d1f20; }
         .tag:hover { background: #222; }
         .issue:hover,
@@ -476,8 +477,8 @@
   <div class="contain">
     <a href="http://localhost:1313/" class="header__logo header__logo--small">
       
-        <img src="/logo.png" alt="Eggsample Status">
-          
+        <h1>Donkey Mobile Status</h1>
+      
     </a>
   </div>
 </div>
@@ -490,7 +491,7 @@
     <div class="contain">
       
       <noscript>
-  <p class="error">Uh oh! It looks like you have disabled JavaScript. Please <a href="//enable-javascript.com">enable scripting</a> to enhance your experience on this website.</p>
+  <p class="error">Uh oh! Het lijkt erop dat je javascript hebt uitgeschakeld. <a href="//enable-javascript.com">zet scripting aan</a> om je ervaring beter te maken.</p>
   <div class="padding"></div>
 </noscript>
 
@@ -507,19 +508,19 @@
 		<div class="status-text">
 			<strong>
 				
-				No issues detected
+				Alle systemen werken
 				
 			</strong>
-			<div class="summary__date clicky relative-time" onclick="location.reload()" data-time-prefix="Last updated "
+			<div class="summary__date clicky relative-time" onclick="location.reload()" data-time-prefix="Laatst gecontroleerd "
       ></div>
     </div>
 
     
     <div class=" subscribe-wrapper">
 				<button class="subscribe-button" aria-haspopup="true" aria-expanded="false" aria-label="Open dropdown">
-					Subscribe
+					Abonneren
 				</button>
-				<div class="subscribe-dropdown hidden" aria-label="Close dropdown">
+				<div class="subscribe-dropdown hidden" aria-label="Sluit dropdown">
 					<ul>
 						<a href="http://localhost:1313//index.xml" target="_blank" rel="noopener noreferrer">
 						<li>
@@ -553,7 +554,7 @@
 	
 	<div id="modal-overlay" class="hidden"></div>
 	<div class="subscribe-modal hidden" role="dialog" aria-modal="true">
-		<button class="subscribe-modal__close" aria-label="Close dropdown">✕</button>
+		<button class="subscribe-modal__close" aria-label="Sluit dropdown">✕</button>
 		<h2 class="subscribe-modal__title"></h2>
 		<div class="subscribe-modal__content"></div>
 		
@@ -855,76 +856,76 @@
 					switch (chosen) {
 						case 'rss':
 							modalTitle.textContent = 'RSS';
-							modalContent.innerHTML = `<p>Subscribe to updates from this status page.</p>`;
+							modalContent.innerHTML = `<p>Abonneer je op updates van deze statuspagina.</p>`;
 							modalActions.innerHTML = `
 							<a href="http:\/\/localhost:1313\//index.xml" target="_blank" rel="noopener noreferrer" class="padding-s">Open</a>
           `;
 							break;
 
 						case 'email':
-							modalTitle.textContent = 'Email';
-							modalContent.innerHTML = `<p>Subscribe to updates from this status page.</p>
+							modalTitle.textContent = 'E-mail';
+							modalContent.innerHTML = `<p>Abonneer je op updates van deze statuspagina.</p>
             <input type="email" placeholder="Email address..." />`;
 							modalActions.innerHTML = `
-            <button class="btn btn--primary">Subscribe</button>
-            <p class="small-text">We recommend choosing a different method of notification if you need critical updates to be delivered as soon as possible.</p>
+            <button class="btn btn--primary">Abonneren</button>
+            <p class="small-text">We raden aan om een andere meldingsmethode te kiezen als u kritieke updates zo snel mogelijk wilt ontvangen.</p>
           `;
 							break;
 
 						case 'discord':
 							modalTitle.textContent = 'Discord';
-							modalContent.innerHTML = `<p>Subscribe to updates from this status page. (Discord server invitation)</p>`;
+							modalContent.innerHTML = `<p>Abonneer je op updates van deze statuspagina. (Discord server invitation)</p>`;
 							copyText = 'YOUR_DISCORD_INVITE_LINK'; 
 							modalActions.innerHTML = `
-            <button class="btn btn--primary" data-copy="${copyText}">Copy</button>
-            <p class="small-text">Looking for more information about this embed and how you can use it?</p>
+            <button class="btn btn--primary" data-copy="${copyText}">Kopiëren</button>
+            <p class="small-text">Op zoek naar meer informatie over deze insluiting en hoe u deze kunt gebruiken?</p>
           `;
 							break;
 
 						case 'slack':
 							modalTitle.textContent = 'Slack';
-							modalContent.innerHTML = `<p>Subscribe to updates from this status page. (Slack workspace link)</p>`;
+							modalContent.innerHTML = `<p>Abonneer je op updates van deze statuspagina. (Slack workspace link)</p>`;
 							copyText = 'YOUR_SLACK_WORKSPACE_LINK'; 
 							modalActions.innerHTML = `
-            <button class="btn btn--primary" data-copy="${copyText}">Copy</button>
-            <p class="small-text">Looking for more information about this embed and how you can use it?</p>
+            <button class="btn btn--primary" data-copy="${copyText}">Kopiëren</button>
+            <p class="small-text">Op zoek naar meer informatie over deze insluiting en hoe u deze kunt gebruiken?</p>
           `;
 							break;
 
 						case 'webhook':
 							modalTitle.textContent = 'Webhook';
-							modalContent.innerHTML = `<p>Subscribe to updates from this status page.</p>
-            <input type="text" placeholder="Webhook URL" />`;
+							modalContent.innerHTML = `<p>Abonneer je op updates van deze statuspagina.</p>
+            <input type="text" placeholder="Webhook-URL" />`;
 							modalActions.innerHTML = `
-            <button class="btn btn--primary">Subscribe</button>
-            <p class="small-text">Please note that the API may be subject to rate limiting.</p>
+            <button class="btn btn--primary">Abonneren</button>
+            <p class="small-text">Houd er rekening mee dat de API mogelijk onderhevig is aan snelheidsbeperkingen.</p>
           `;
 							break;
 
 						case 'push':
-							modalTitle.textContent = 'Push notifications';
-							modalContent.innerHTML = `<p>You can subscribe to this status page via push notifications through your browser. You will have to do this on every device you want to receive notifications on. Please note that this feature is subject to browser support and may not work on all devices as expected.</p>`;
+							modalTitle.textContent = 'Pushmeldingen';
+							modalContent.innerHTML = `<p>U kunt zich abonneren op deze statuspagina via pushmeldingen via uw browser. U moet dit doen op elk apparaat waarop u meldingen wilt ontvangen. Houd er rekening mee dat deze functie afhankelijk is van browserondersteuning en mogelijk niet op alle apparaten werkt zoals verwacht.</p>`;
 							modalActions.innerHTML = `
-            <button class="btn btn--primary">Subscribe</button>
-            <p class="small-text">We recommend choosing a different method of notification if you need critical updates to be delivered as soon as possible.</p>
+            <button class="btn btn--primary">Abonneren</button>
+            <p class="small-text">We raden aan om een andere meldingsmethode te kiezen als u kritieke updates zo snel mogelijk wilt ontvangen.</p>
           `;
 							break;
 
 						case 'api':
 							modalTitle.textContent = 'API';
-							modalContent.innerHTML = `<p>You can use our API to integrate the information and updates from this status page into your own website or application. Simply make a GET request to the following URL: <br /> <code>http:\/\/localhost:1313\/index.json</code></p>`;
+							modalContent.innerHTML = `<p>U kunt onze API gebruiken om de informatie en updates van deze statuspagina te integreren in uw eigen website of applicatie. Maak eenvoudig een GET-verzoek naar de volgende URL: <br /> <code>http:\/\/localhost:1313\/index.json</code></p>`;
 							modalActions.innerHTML = `
-            <a href="https://github.com/cstate/cstate/wiki/API" target="_blank" rel="noopener noreferrer" class="btn btn--primary">Read documentation</a>
-            <p>Please note that the API may be subject to rate limiting.</p>
+            <a href="https://github.com/cstate/cstate/wiki/API" target="_blank" rel="noopener noreferrer" class="btn btn--primary">Lees documentatie</a>
+            <p>Houd er rekening mee dat de API mogelijk onderhevig is aan snelheidsbeperkingen.</p>
           `;
 							break;
 
 						default:
-							modalTitle.textContent = 'Subscribe';
-							modalContent.innerHTML = `<p>Subscribe to updates from this status page.</p>`;
+							modalTitle.textContent = 'Abonneren';
+							modalContent.innerHTML = `<p>Abonneer je op updates van deze statuspagina.</p>`;
 							modalActions.innerHTML = `
-            <button class="btn btn--primary">Subscribe</button>
-            <p class="small-text">Looking for more information about this embed and how you can use it?</p>
+            <button class="btn btn--primary">Abonneren</button>
+            <p class="small-text">Op zoek naar meer informatie over deze insluiting en hoe u deze kunt gebruiken?</p>
           `;
 							break;
 					}
@@ -936,7 +937,7 @@
 							const textToCopy = button.getAttribute('data-copy');
 							navigator.clipboard.writeText(textToCopy).then(() => {
 								
-								button.textContent = 'Copied!';
+								button.textContent = 'Gekopieerd!';
 							}).catch(err => {
 								console.error('Failed to copy text:', err);
 							});
@@ -977,7 +978,7 @@
       
       <div class="padding">
         <p>
-          <a href="/issues/2024-02-24-maintenance-window/"><strong class="bold">Maintenance Announcement →</strong></a>
+          <a href="/issues/2024-02-24-maintenance-window/"><strong class="bold">Onderhoud gepland →</strong></a>
         </p>
 
         <p><small>
@@ -1016,7 +1017,7 @@
 
 	
 	<div class="category category--closed category--titled"
-		id="north-coast">
+		id="kerkdienst-gemist">
 		
 		<div class="bold padding clicky category__head" onclick="toggleCategoryHead(this)">
 			<span class="hide-without-js">
@@ -1028,18 +1029,18 @@
 					</svg>
 				</span>
 				<span class="category__open-marker">
-					<span class="sr-only">Close dropdown</span>
+					<span class="sr-only">Sluit dropdown</span>
 					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
 						stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
 						<polyline points="6 9 12 15 18 9"></polyline>
 					</svg>
 				</span>
 			</span>
-			<b>North Coast</b>
+			<b>Kerkdienst Gemist</b>
 			
 			<span class="tooltip tooltip--small">
 				&nbsp; <span class="faded">(?)</span>
-				<span class="tooltip__text">The main servers are located here.</span>
+				<span class="tooltip__text">Kerkdienstgemist services</span>
 			</span>
 			
 			<span class="category-status"></span>
@@ -1066,33 +1067,7 @@
 
 				<span class="component-status">
 					
-					Operational
-					
-				</span>
-
-				
-
-				
-			</div>
-			
-			
-			
-			
-			
-
-			<div class="component" id="system-backup-gateway"
-				data-status="ok">
-				<a href="/affected/backup-gateway/" class="no-underline">
-					Backup Gateway
-				</a>
-
-				
-
-				
-
-				<span class="component-status">
-					
-					Operational
+					Operationeel
 					
 				</span>
 
@@ -1124,9 +1099,9 @@
 				componentsOfThisCategory.forEach(checkStatus);
 
 				var highestLevelStatusReadable = highestLevelStatus;
-				if (highestLevelStatus === 'ok') highestLevelStatusReadable = 'Operational';
-				else if (highestLevelStatus === 'notice') highestLevelStatusReadable = 'Maintenance';
-				else if (highestLevelStatus === 'disrupted') highestLevelStatusReadable = 'Disrupted';
+				if (highestLevelStatus === 'ok') highestLevelStatusReadable = 'Operationeel';
+				else if (highestLevelStatus === 'notice') highestLevelStatusReadable = 'Onderhoud';
+				else if (highestLevelStatus === 'disrupted') highestLevelStatusReadable = 'Onderbroken';
 				else if (highestLevelStatus === 'down') highestLevelStatusReadable = 'Down';
 
 				if (thisCategory.classList.contains('category--titled')) {
@@ -1137,8 +1112,8 @@
 		</script>
 	</div>
 	
-	<div class="category category--open category--titled"
-		id="empty-category">
+	<div class="category category--closed category--titled"
+		id="donkey-mobile">
 		
 		<div class="bold padding clicky category__head" onclick="toggleCategoryHead(this)">
 			<span class="hide-without-js">
@@ -1150,14 +1125,19 @@
 					</svg>
 				</span>
 				<span class="category__open-marker">
-					<span class="sr-only">Close dropdown</span>
+					<span class="sr-only">Sluit dropdown</span>
 					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
 						stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
 						<polyline points="6 9 12 15 18 9"></polyline>
 					</svg>
 				</span>
 			</span>
-			<b>Empty Category</b>
+			<b>Donkey Mobile</b>
+			
+			<span class="tooltip tooltip--small">
+				&nbsp; <span class="faded">(?)</span>
+				<span class="tooltip__text">Donkey Mobile services</span>
+			</span>
 			
 			<span class="category-status"></span>
 		</div>
@@ -1189,158 +1169,9 @@
 				componentsOfThisCategory.forEach(checkStatus);
 
 				var highestLevelStatusReadable = highestLevelStatus;
-				if (highestLevelStatus === 'ok') highestLevelStatusReadable = 'Operational';
-				else if (highestLevelStatus === 'notice') highestLevelStatusReadable = 'Maintenance';
-				else if (highestLevelStatus === 'disrupted') highestLevelStatusReadable = 'Disrupted';
-				else if (highestLevelStatus === 'down') highestLevelStatusReadable = 'Down';
-
-				if (thisCategory.classList.contains('category--titled')) {
-					thisCategory.querySelector('.category__head').setAttribute('data-status', highestLevelStatus);
-					thisCategory.querySelector('.category-status').innerHTML = highestLevelStatusReadable;
-				}
-			})();
-		</script>
-	</div>
-	
-	<div class="category category--open"
-		id="uncategorized">
-		
-		<div class="padding"></div>
-		
-
-		
-		<div class="components">
-			
-			
-			
-			
-			
-
-			<div class="component" id="system-website"
-				data-status="ok">
-				<a href="/affected/website/" class="no-underline">
-					Website
-				</a>
-
-				
-				<span class="tooltip tooltip--small">
-					&nbsp; <span class="faded">(?)</span>
-					<span class="tooltip__text">The web frontend for the application.</span>
-				</span>
-				
-
-				
-				<span class="span-icon">
-					<a href="https://example.com/" class="external-link-style">
-						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-							stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
-							<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-							<polyline points="15 3 21 3 21 9"></polyline>
-							<line x1="10" y1="14" x2="21" y2="3"></line>
-						</svg>
-					</a>
-				</span>
-				
-
-				<span class="component-status">
-					
-					Operational
-					
-				</span>
-
-				
-
-				
-			</div>
-			
-			
-			
-			
-			
-
-			<div class="component" id="system-api"
-				data-status="ok">
-				<a href="/affected/api/" class="no-underline">
-					API
-				</a>
-
-				
-				<span class="tooltip tooltip--small">
-					&nbsp; <span class="faded">(?)</span>
-					<span class="tooltip__text">The guts of the application.</span>
-				</span>
-				
-
-				
-
-				<span class="component-status">
-					
-					Operational
-					
-				</span>
-
-				
-
-				
-			</div>
-			
-			
-			
-			
-			
-
-			<div class="component" id="system-media-proxy"
-				data-status="ok">
-				<a href="/affected/media-proxy/" class="no-underline">
-					Media Proxy
-				</a>
-
-				
-				<span class="tooltip tooltip--small">
-					&nbsp; <span class="faded">(?)</span>
-					<span class="tooltip__text">This is the service responsible for serving images, audio, and video. It is reliant on our CDN.</span>
-				</span>
-				
-
-				
-
-				<span class="component-status">
-					
-					Operational
-					
-				</span>
-
-				
-
-				
-			</div>
-			
-		</div>
-
-		
-		<script>
-			(function () {
-				var thisCategory = document.currentScript.parentNode;
-				var componentsOfThisCategory = thisCategory.querySelectorAll('.component');
-				var highestLevelStatus = 'ok';
-
-				function checkStatus(element) {
-					var status = element.getAttribute('data-status');
-					if (status === 'down') {
-						highestLevelStatus = 'down';
-					} else if (status === 'disrupted' && highestLevelStatus !== 'down') {
-						highestLevelStatus = 'disrupted';
-					} else if (status === 'notice' && highestLevelStatus !== 'down' && highestLevelStatus !== 'disrupted') {
-						highestLevelStatus = 'notice';
-					}
-				}
-
-				componentsOfThisCategory.forEach(checkStatus);
-
-				var highestLevelStatusReadable = highestLevelStatus;
-				if (highestLevelStatus === 'ok') highestLevelStatusReadable = 'Operational';
-				else if (highestLevelStatus === 'notice') highestLevelStatusReadable = 'Maintenance';
-				else if (highestLevelStatus === 'disrupted') highestLevelStatusReadable = 'Disrupted';
+				if (highestLevelStatus === 'ok') highestLevelStatusReadable = 'Operationeel';
+				else if (highestLevelStatus === 'notice') highestLevelStatusReadable = 'Onderhoud';
+				else if (highestLevelStatus === 'disrupted') highestLevelStatusReadable = 'Onderbroken';
 				else if (highestLevelStatus === 'down') highestLevelStatusReadable = 'Down';
 
 				if (thisCategory.classList.contains('category--titled')) {
@@ -1365,7 +1196,7 @@
   
   
     <div class="contain contain--more">
-      <h2 class="center">Incident history</h2>
+      <h2 class="center">Incident geschiedenis</h2>
       <hr class="clean">
     </div>
   
@@ -1400,14 +1231,14 @@
 <a href="http://localhost:1313/issues/2024-02-24-maintenance-window/" class="issue no-underline">
   
 
-  <small class="date float-right relative-time" title="February 24, 2024 at 10:35 AM UTC" data-date="2024-02-24T10:35:00Z">
+  <small class="date float-right relative-time" title="24 Januari 2025 10:35 AM UTC" data-date="2025-02-24T10:35:00Z">
       
-        February 24, 2024 at 10:35 AM UTC
+        24 Januari 2025 10:35 AM UTC
       
     </small>
 
     <h3>
-      Maintenance Announcement  ℹ
+      Onderhoud gepland  ℹ
     </h3>
 
   
@@ -1423,9 +1254,9 @@
 
 <a href="http://localhost:1313/issues/2019-10-08-testing-new-pipeline/" class="issue no-underline">
   
-    <small class="date float-right relative-time" title="October 5, 2019 at 4:24 PM UTC" data-date="2019-10-05T16:24:00Z">
+    <small class="date float-right relative-time" title="5 Januari 2019 4:24 PM UTC" data-date="2019-10-05T16:24:00Z">
       
-        October 5, 2019 at 4:24 PM UTC
+        5 Januari 2019 4:24 PM UTC
       
     </small>
 
@@ -1448,7 +1279,7 @@
 	<div
 		class="ok">
 		
-		Resolved after 
+		Opgelost na 
 		
 		34m
 		
@@ -1469,9 +1300,9 @@
 <a href="http://localhost:1313/issues/i-testing-cstate-functions/" class="issue no-underline">
   
 
-  <small class="date float-right relative-time" title="October 4, 2019 at 6:05 PM UTC" data-date="2019-10-04T18:05:00Z">
+  <small class="date float-right relative-time" title="4 Januari 2019 6:05 PM UTC" data-date="2019-10-04T18:05:00Z">
       
-        October 4, 2019 at 6:05 PM UTC
+        4 Januari 2019 6:05 PM UTC
       
     </small>
 
@@ -1492,9 +1323,9 @@
 
 <a href="http://localhost:1313/issues/2018-05-25-us-east-conn-issues/" class="issue no-underline">
   
-    <small class="date float-right relative-time" title="April 25, 2018 at 4:13 AM UTC" data-date="2018-04-25T04:13:00Z">
+    <small class="date float-right relative-time" title="25 Januari 2018 4:13 AM UTC" data-date="2018-04-25T04:13:00Z">
       
-        April 25, 2018 at 4:13 AM UTC
+        25 Januari 2018 4:13 AM UTC
       
     </small>
 
@@ -1517,8 +1348,8 @@
 	<div
 		class="faded">
 		
-		Resolved
-		in under a minute
+		Opgelost
+		Binnen de minuut
 		
 	</div>
 
@@ -1535,9 +1366,9 @@
 
 <a href="http://localhost:1313/issues/2018-04-13-unavailable-guilds-connection-issues/" class="issue no-underline">
   
-    <small class="date float-right relative-time" title="April 13, 2018 at 3:54 PM UTC" data-date="2018-04-13T15:54:00Z">
+    <small class="date float-right relative-time" title="13 Januari 2018 3:54 PM UTC" data-date="2018-04-13T15:54:00Z">
       
-        April 13, 2018 at 3:54 PM UTC
+        13 Januari 2018 3:54 PM UTC
       
     </small>
 
@@ -1560,11 +1391,11 @@
 	<div
 		class="warning">
 		
-		Resolved after 
+		Opgelost na 
 		1h 
 		36m
 		
-		of downtime
+		offline te zijn
 		
 		
 	</div>
@@ -1582,9 +1413,9 @@
 
 <a href="http://localhost:1313/issues/2018-01-17-sending-dms-impacted/" class="issue no-underline">
   
-    <small class="date float-right relative-time" title="December 17, 2017 at 4:24 PM UTC" data-date="2017-12-17T16:24:00Z">
+    <small class="date float-right relative-time" title="17 Januari 2017 4:24 PM UTC" data-date="2017-12-17T16:24:00Z">
       
-        December 17, 2017 at 4:24 PM UTC
+        17 Januari 2017 4:24 PM UTC
       
     </small>
 
@@ -1607,7 +1438,7 @@
 	<div
 		class="ok">
 		
-		Resolved after 
+		Opgelost na 
 		
 		34m
 		
@@ -1630,7 +1461,7 @@
   
 
 
-  console.log('cState v6.0 - https://github.com/cstate/cstate');
+  console.log('cState v6.0.1 - https://github.com/cstate/cstate');
   document.getElementsByTagName('html')[0].className = 'js';
 
   
@@ -1685,11 +1516,11 @@
     var interval = Math.floor(seconds / 31536000);
 
     if (interval > 1) {
-      return interval + ' years';
+      return interval + ' jaren';
     }
     interval = Math.floor(seconds / 2592000);
     if (interval > 1) {
-      return interval + ' months';
+      return interval + ' maanden';
     }
     interval = Math.floor(seconds / 86400);
     if (interval > 1) {
@@ -1697,7 +1528,7 @@
     }
     interval = Math.floor(seconds / 3600);
     if (interval > 1) {
-      return interval + 'h';
+      return interval + 'u';
     }
     interval = Math.floor(seconds / 60);
     if (interval > 1) {
@@ -1729,11 +1560,11 @@
       if (!time) {
         time = element.innerText;
         element.setAttribute('title', time || new Date);
-        html += 'just now';
+        html += 'net';
       } else if (timeSince(time) < 0) {
         html = element.innerText;
       } else {
-        html += timeSince(time) + ' ago';
+        html += timeSince(time) + ' geleden';
       }
       html += element.getAttribute('data-time-suffix') || '';
       element.innerHTML = html.trim();
@@ -1753,8 +1584,8 @@
 
 <div class="footer">
   <div class="contain">
-    <p><strong class="bold">&copy; Eggsample Status, 2025</strong>
-       &nbsp; • &nbsp; <a href="#">Back to top</a>
+    <p><strong class="bold">&copy; Donkey Mobile Status, 2025</strong>
+       &nbsp; • &nbsp; <a href="#">terug naar top</a>
     </p>
 
     <p>We continuously monitor the status of our services and if there are any interruptions, a note will be posted here.</p>
@@ -1768,9 +1599,9 @@
       <p class="hinted">
         <small>
           ⚡
-          Subscribe via RSS —
+          Abonneer via RSS —
           
-            <a href="http://localhost:1313/index.xml" class="no-underline">to all updates</a>
+            <a href="http://localhost:1313/index.xml" class="no-underline">op alle updates</a>
           
           
         </small>
